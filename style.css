@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    padding:0;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+img {
+    display:block;
+}
+
+.header {
+    padding: 2%; /*top right bottom left*/
+    width: auto;
+    background-color:rgba(138, 185, 145, 0.966);
+}
+
+.header-container {
+    display: grid;
+    grid-template-rows: 200px;
+    grid-template-columns: repeat(auto-fit, minmax(770px, 1fr)) ;
+    justify-items: center;
+    align-items: center;
+}
+
+.project-card {
+    position: relative;
+    padding: 5%;
+}
+
+.project-container {
+    display: grid;
+    position: relative;
+    grid-template-rows: 400px;
+    grid-template-columns: 60% auto;
+    justify-items: center;
+    align-items: center;
+    background-color:rgba(138, 185, 145, 0.966);
+}
+
+.project-container > .project-text {
+    align-self:start;
+    width: 100%;
+    height: 100%;
+}
+
+.project-name {
+    padding: 1em;
+    font-size: 40px;
+    height:30%;
+}
+
+.project-description {
+    padding: 1em;
+    font-size:18px;
+    height:70%;
+    overflow:hidden;
+}
+
+.resize {
+    width: auto;
+    height: 200px;
+}
+
+#campusRide::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("campusRideDemo.gif"); 
+    filter: blur(1px);
+}
+
+#tpmjs::before{
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("tpmjs.png");    
+    filter: blur(1px);
+}
